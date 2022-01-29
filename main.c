@@ -2,6 +2,11 @@
 #include <stdio.h>
 #include <pigpiod_if2.h>
 
+// run sudo pigpiod -s 5 -b 200 -g -l
+// to start the daemon
+
+// attach LEDS to GPIO4, GPIO17, GPIO22, GPIO27
+// all this will do is set the WHITE pin to 50% brightness
 static const uint32_t white = 4;
 static const uint32_t red    = 17;
 static const uint32_t green  = 27;
